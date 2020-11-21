@@ -25,7 +25,7 @@
 //#define IMGUI_API __declspec( dllimport )
 
 //---- Don't define obsolete functions/enums/behaviors. Consider enabling from time to time after updating to avoid using soon-to-be obsolete function/names.
-//#define IMGUI_DISABLE_OBSOLETE_FUNCTIONS
+#define IMGUI_DISABLE_OBSOLETE_FUNCTIONS
 
 //---- Disable all of Dear ImGui or don't implement standard windows.
 // It is very strongly recommended to NOT disable the demo windows during development. Please read comments in imgui_demo.cpp.
@@ -50,7 +50,7 @@
 //#define IMGUI_USE_BGRA_PACKED_COLOR
 
 //---- Use 32-bit for ImWchar (default is 16-bit) to support full unicode code points.
-//#define IMGUI_USE_WCHAR32
+#define IMGUI_USE_WCHAR32
 
 //---- Avoid multiple STB libraries implementations, or redefine path/filenames to prioritize another version
 // By default the embedded implementations are declared static and not available outside of imgui cpp files.
@@ -79,7 +79,7 @@
 // Your renderer back-end will need to support it (most example renderer back-ends support both 16/32-bit indices).
 // Another way to allow large meshes while keeping 16-bit indices is to handle ImDrawCmd::VtxOffset in your renderer.
 // Read about ImGuiBackendFlags_RendererHasVtxOffset for details.
-//#define ImDrawIdx unsigned int
+#define ImDrawIdx unsigned int
 
 //---- Override ImDrawCallback signature (will need to modify renderer back-ends accordingly)
 //struct ImDrawList;
